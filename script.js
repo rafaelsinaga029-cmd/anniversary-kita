@@ -1,4 +1,4 @@
-const typingText='Selamat Anniversary ke-3, sayanggg. ❤️';let i=0;
+const typingText='Selamat Anniversary ke-3, sayangggg.❤️';let i=0;
 function type(){const el=document.getElementById('typing');if(i<typingText.length){el.innerHTML+=typingText.charAt(i++);setTimeout(type,65)}}type();
 function enterUniverse(){document.getElementById('intro').classList.add('hidden');document.getElementById('main').classList.remove('hidden');const music=document.getElementById('music');music.volume=.28;music.play().catch(()=>showToast('Tambahkan music.mp3 ke folder assets jika ingin musik 🎵'));window.scrollTo(0,0);for(let j=0;j<18;j++)setTimeout(createHeart,j*90)}
 function showToast(text){const t=document.getElementById('toast');t.textContent=text;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),3500)}
