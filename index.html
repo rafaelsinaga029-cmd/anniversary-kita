@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#170d2b" />
+  <title>Happy Anniversary | Our Little Universe ❤️</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="stars"></div><div class="hearts" id="hearts"></div>
+
+  <section class="intro" id="intro">
+    <div class="intro-card">
+      <div class="ring">♡</div>
+      <p class="eyebrow">18 AGUSTUS 2026 · ANNIVERSARY KE-3</p>
+      <h1 id="typing"></h1>
+      <p class="intro-copy">Sebuah halaman kecil untuk merayakan cerita besar yang kita jalani bersama.</p>
+      <button onclick="enterUniverse()">Buka Hadiah Kita ✨</button>
+      <p class="tap-hint">Untuk Muzdalifah Putri Chuswarany ❤️</p>
+    </div>
+  </section>
+
+  <main id="main" class="hidden">
+    <nav class="navbar">
+      <div class="brand">Our Little Universe ♡</div>
+      <a href="#anniversary">Anniversary</a><a href="#tentang">Tentang Kamu</a>
+      <a href="#timeline">Perjalanan Kita</a><a href="#galeri">Kenangan</a><a href="#surat">Surat</a>
+    </nav>
+
+    <section class="hero" id="anniversary">
+      <div class="hero-copy">
+        <p class="mini">HAPPY ANNIVERSARY KE-3</p>
+        <h2>3 Tahun,<br><em>dan masih kamu.</em> ❤️</h2>
+        <p class="lead">Dari 18 Agustus 2023 sampai hari ini, kita sudah melewati begitu banyak cerita. Terima kasih karena masih berjalan di sampingku.</p>
+        <div class="hero-actions"><button onclick="sendHug()">Kirim Peluk Virtual 🤍</button><a class="scroll-btn" href="#timeline">Lihat cerita kita ↓</a></div>
+      </div>
+      <div class="photo-frame"><div class="photo-label">MY FAVORITE PERSON</div><img src="assets/1.jpeg" alt="Foto kita" onerror="this.src='https://placehold.co/700x800/2b173e/ffffff?text=Our+Memory'" /></div>
+    </section>
+
+    <section class="anniversary-banner section">
+      <p class="eyebrow">OUR SPECIAL DAY</p><h2>18 · 08 · 2026</h2><p>Tiga tahun mencintai, belajar, bertumbuh, dan memilih satu sama lain.</p>
+    </section>
+
+    <section class="section glass" id="tentang">
+      <p class="eyebrow">A LITTLE NOTE</p><h2>Tentang Kamu</h2>
+      <div class="soft-list"><div>♡ Nama yang selalu berhasil membuatku tersenyum.</div><div>♡ Orang yang membuat hari biasa terasa spesial.</div><div>♡ Rumah paling nyaman yang pernah aku temukan.</div><div>♡ Perempuan hebat yang selalu aku syukuri.</div></div>
+    </section>
+
+    <section class="section countdown-box">
+      <p class="eyebrow">OUR LOVE STORY KEEPS COUNTING</p><h2>Kita sudah bersama selama...</h2><div id="countup" class="countup"></div><p class="subtle">Setiap detik adalah satu lagi alasan untuk bersyukur karena ada kamu.</p>
+    </section>
+
+    <section id="timeline" class="section">
+      <p class="eyebrow">FROM THEN TO NOW</p><h2>Perjalanan Kita</h2>
+      <div class="timeline">
+        <div class="event"><span>18 AGUSTUS 2023</span><p><b>Hari pertama.</b> Di sinilah cerita kita resmi dimulai. ❤️</p></div>
+        <div class="event"><span>SETELAHNYA</span><p>Obrolan sederhana berubah menjadi kebiasaan yang selalu aku tunggu.</p></div>
+        <div class="event"><span>HARI-HARI SULIT</span><p>Kita belajar bahwa cinta bukan hanya tentang bahagia, tetapi juga tentang bertahan dan saling memahami.</p></div>
+        <div class="event"><span>18 AGUSTUS 2026</span><p><b>Anniversary ke-3.</b> Setelah semua yang kita lewati, aku masih memilih kamu.</p></div>
+      </div>
+    </section>
+
+    <section id="galeri" class="section">
+      <p class="eyebrow">OUR MEMORIES</p><h2>Potongan Kenangan</h2>
+      <div class="polaroids">
+        <div class="polaroid"><img src="assets/2.jpeg" alt="Kenangan 1" /><p>Kenangan yang selalu ingin kuulang.</p></div>
+        <div class="polaroid"><img src="assets/3.jpeg" alt="Kenangan 2" /><p>Satu senyum, seribu alasan untuk bahagia.</p></div>
+        <div class="polaroid"><img src="assets/4.jpeg" alt="Kenangan 3" /><p>Selalu ada tempat untuk kamu di hatiku.</p></div>
+      </div>
+    </section>
+
+    <section class="section glass reasons-section">
+      <p class="eyebrow">WHY YOU?</p><h2>6 Alasan Aku Tetap Memilih Kamu</h2>
+      <div class="cards"><button onclick="showReason(1)">01</button><button onclick="showReason(2)">02</button><button onclick="showReason(3)">03</button><button onclick="showReason(4)">04</button><button onclick="showReason(5)">05</button><button onclick="showReason(6)">06</button></div>
+      <p id="reasonText" class="reason">Pilih satu angka untuk membuka pesanku 💜</p>
+    </section>
+
+    <section id="surat" class="section letter-section">
+      <p class="eyebrow">OPEN WHEN YOU MISS ME</p><h2>Surat Anniversary Untuk Kamu</h2>
+      <div class="envelope" onclick="openLetter()">💌<span>Klik untuk membuka</span></div>
+      <div id="letter" class="letter hidden">
+        <p>Sayanggg,</p>
+        <p>Hari ini kita sampai di satu tanggal yang spesial lagi. Tiga tahun mungkin terdengar seperti angka, tapi buatku angka itu berisi ribuan percakapan, tawa, rindu, salah paham, maaf, dan momen-momen kecil yang tidak akan pernah bisa digantikan.</p>
+        <p>Terima kasih sudah hadir dan tetap menjadi bagian dari hidupku. Terima kasih untuk setiap perhatian, kesabaran, dan semua hal kecil yang mungkin terlihat sederhana tetapi selalu berarti bagiku.</p>
+        <p>Aku tidak bisa menjanjikan bahwa setiap hari ke depan akan selalu mudah. Tapi aku ingin terus belajar menjadi pasangan yang lebih baik, mendengarkanmu lebih banyak, memahami kamu lebih dalam, dan memilih kamu lagi dan lagi.</p>
+        <p>Selamat Anniversary ke-3, sayang. Semoga cerita kita masih panjang. Semoga suatu hari nanti kita melihat kembali halaman kecil ini dan tersenyum karena ternyata kita sudah melewati begitu banyak hal bersama.</p>
+        <b>Terima kasih sudah menjadi kamu. Aku sayang kamu, Muzdalifah Putri Chuswarany. ❤️</b>
+      </div>
+    </section>
+
+    <section class="ending">
+      <div><p class="eyebrow">UNTIL OUR NEXT CHAPTER</p><h2>Happy Anniversary, Sayanggg ❤️</h2><p>3 tahun telah lewat.<br>Semoga masih ada puluhan tahun lagi yang bisa kita tulis bersama.</p><button class="secret" onclick="secretMessage()">Satu pesan terakhir ✨</button></div>
+    </section>
+  </main>
+
+  <div id="toast" class="toast"></div>
+  <audio id="music" loop><source src="assets/music.mp3" type="audio/mpeg" /></audio>
+  <script src="script.js"></script>
+</body>
+</html>
